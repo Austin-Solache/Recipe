@@ -3,18 +3,25 @@
 html {
     border-right: rgba(122, 191, 191,.5) solid 50px;
     border-left: rgba(122, 191, 191,.5) solid 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 h1 {
     font-size: 40px;
     font-family: "Bebas Neue", serif;
+    text-align: center;
 }
 h2 {
     font-size: 30px;
     font-family: "Bebas Neue", serif;
+    text-align: center;
 }
 h3 {
     font-size: 25px;
     font-family: "Bebas Neue", serif;
+    text-align: center;
 }
 input {
     font-size: 16px;
@@ -32,23 +39,35 @@ nav span {
     font-size: 20px;
     font-family: "Bebas Neue", serif;
 }
+[title="tacos"] {
+    width: 100%;
+}
 p {
     font-size: 16px;
     font-family: "Montserrat", serif;
 }
-DD {
+section {
+    background-color: #7ABFBF;
+}
+section img {
+    height: auto;
+    width: 100px;
+    justify-content: center;
+}
+.DD {
     font-size: 16px;
     font-family: "Montserrat", serif;
 }
-DT {
+.DT {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
 }
 li {
     font-size: 16px;
     font-family: "Montserrat", serif;
+    padding-bottom: 10px;
 }
 menu li {
     font-size: 20px;
