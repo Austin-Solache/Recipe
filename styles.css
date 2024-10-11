@@ -28,16 +28,24 @@ input {
     font-size: 16px;
     font-family: "Montserrat", serif;
 }
-header {
-    display: flex;
+nav {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -20px;
+    height: 98px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-header a {
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+nav a {
     text-decoration: none;
     font-size: 20px;
     font-family: "Bebas Neue", serif;
@@ -46,6 +54,20 @@ header a {
     text-align: center;
     font-weight: 600;
     }
+.avatar {
+    display: flex;
+    background-color: #EB5428;
+    width: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 99px;
+}
+.sign {
+    align-items: center;
+}
 .search {
     display: flex;
     padding-top: 50px;
@@ -67,21 +89,7 @@ header a {
     width: 49px;
     height: 60px;
 }
-.avatar {
-    display: flex;
-    background-color: #EB5428;
-    width: 200px;
-    margin-left: 25px;
-    margin-right: 25px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-}
-.sign {
-    align-items: center;
-}
-nav , article {
+.caption, article {
     font-size: 16px;
     font-family: "Montserrat", serif;
     display: grid;
@@ -89,7 +97,7 @@ nav , article {
     justify-content: center;
     padding-bottom: 10px;
 }
-nav a , article a {
+.caption a , article a {
     font-size: 20px;
     font-family: "Bebas Neue", serif;
     text-decoration: none;
@@ -189,4 +197,10 @@ footer img {
     height: auto;
     width: 200px;
     padding: 20px;
+}
+
+@media screen and (min-width:768px){
+    html {
+        background-color: red;
+    }
 }
