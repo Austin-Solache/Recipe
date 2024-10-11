@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 html {
-    border-right: rgba(122, 191, 191,.5) solid 50px;
-    border-left: rgba(122, 191, 191,.5) solid 50px;
+    border-right: rgba(122, 191, 191,.5) solid 40px;
+    border-left: rgba(122, 191, 191,.5) solid 40px;
     margin: 0;
     padding: 0;
     font-size: 100%;
@@ -27,13 +27,20 @@ input {
     font-size: 16px;
     font-family: "Montserrat", serif;
 }
-nav {
+nav , article {
     font-size: 16px;
     font-family: "Montserrat", serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
 }
-nav a {
+nav a , article a {
     font-size: 20px;
     font-family: "Bebas Neue", serif;
+    text-decoration: none;
+    color: #EB5428;
+    text-align: center;
+    font-weight: 600;
 }
 nav span {
     font-size: 20px;
@@ -78,6 +85,14 @@ menu li {
     font-family: "Bebas Neue", serif;
 }
 footer {
+    display: grid;
     font-size: 20px;
     font-family: "Bebas Neue", serif;
+    text-align: center;
+    place-items: center;
+}
+footer img {
+    height: auto;
+    width: 200px;
+    padding: 20px;
 }
