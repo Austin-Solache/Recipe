@@ -29,9 +29,57 @@ input {
     font-family: "Montserrat", serif;
 }
 header {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: -10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-weight: 600;
+    }
+    .search {
+        display: flex;
+        padding-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .search input {
+        display: flex;
+        justify-content: center;
+        border: #EB5428 solid 2px;
+        height: 40px;
+        width: 250px;
+    }
+    .search a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49px;
+        height: 60px;
+    }
+.avatar {
+    display: flex;
+    background-color: #EB5428;
+    width: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+.sign {
+    align-items: center;
 }
 nav , article {
     font-size: 16px;
@@ -103,10 +151,4 @@ footer img {
     height: auto;
     width: 200px;
     padding: 20px;
-}
-.avatar {
-    background-color: #EB5428;
-}
-.sign {
-    fill: #EB5428;
 }
