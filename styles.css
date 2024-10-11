@@ -3,6 +3,7 @@
 html {
     border-right: rgba(122, 191, 191,.5) solid 40px;
     border-left: rgba(122, 191, 191,.5) solid 40px;
+    border-bottom: rgba(122, 191, 191,.5) solid 20px;
     margin: 0;
     padding: 0;
     font-size: 100%;
@@ -26,6 +27,11 @@ h3 {
 input {
     font-size: 16px;
     font-family: "Montserrat", serif;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 }
 nav , article {
     font-size: 16px;
@@ -84,15 +90,23 @@ menu li {
     font-size: 20px;
     font-family: "Bebas Neue", serif;
 }
-footer {
+footer , footer p {
     display: grid;
     font-size: 20px;
     font-family: "Bebas Neue", serif;
     text-align: center;
     place-items: center;
+    font-weight: 500;
+    margin-bottom: -3px;
 }
 footer img {
     height: auto;
     width: 200px;
     padding: 20px;
+}
+.avatar {
+    background-color: #EB5428;
+}
+.sign {
+    fill: #EB5428;
 }
