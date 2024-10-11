@@ -46,27 +46,27 @@ header a {
     text-align: center;
     font-weight: 600;
     }
-    .search {
-        display: flex;
-        padding-top: 50px;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        align-items: center;
+.search {
+    display: flex;
+    padding-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.search input {
+    display: flex;
+    justify-content: center;
+    border: #EB5428 solid 2px;
+     height: 40px;
+     width: 250px;
     }
-    .search input {
-        display: flex;
-        justify-content: center;
-        border: #EB5428 solid 2px;
-        height: 40px;
-        width: 250px;
-    }
-    .search a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 49px;
-        height: 60px;
-    }
+.search a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 60px;
+}
 .avatar {
     display: flex;
     background-color: #EB5428;
@@ -87,6 +87,7 @@ nav , article {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
+    padding-bottom: 10px;
 }
 nav a , article a {
     font-size: 20px;
@@ -95,6 +96,9 @@ nav a , article a {
     color: #EB5428;
     text-align: center;
     font-weight: 600;
+}
+article a {
+    margin-top: 80px;
 }
 nav span {
     font-size: 20px;
@@ -110,10 +114,35 @@ p {
 section {
     background-color: #7ABFBF;
 }
-section img {
-    height: auto;
-    width: 100px;
-    justify-content: center;
+section figure {
+    display: flex;
+    height: 200px;
+    padding-top: 10px;
+    margin-bottom: -60px;
+}
+section figure img {  
+    display: flex;
+    width: 130px;
+    height: 130px;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+.details h3 {
+    text-align: left;
+    margin-top: -10px;
+}
+.dish {
+    margin-bottom: -15px;
+}
+.details {
+    flex: 1; 
+    text-align: left;
+    margin-top: 25px;
+    padding-left: 10px;
+}
+.stars {
+    margin-right: 5px;
+    margin-top: -20px;
 }
 .DD {
     font-size: 16px;
