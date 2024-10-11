@@ -107,6 +107,14 @@ nav span {
 [title="tacos"] {
     width: 100%;
 }
+.prep {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Montserrat", serif;
+    padding-left: 10px;
+    margin-bottom: -25px;
+}
 p {
     font-size: 16px;
     font-family: "Montserrat", serif;
@@ -153,6 +161,7 @@ section figure img {
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+    padding-right: 10px;
 }
 li {
     font-size: 16px;
