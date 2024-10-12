@@ -53,7 +53,7 @@ nav a {
     font-weight: 600;
     }
 .avatar {
-    display: f;
+    display: flex;
     position: relative;
     background-color: #EB5428;
     width: 200px;
@@ -63,7 +63,7 @@ nav a {
     align-items: center;
     height: 99px;
 }
-.main-nav {
+.main {
     display: none;
 }
 .search {
@@ -213,29 +213,56 @@ footer img {
     }
     .main-nav a {
         display: grid;
-        position: relative;
-        top: 100px;
+        position: absolute;
+        top: 130px;
         margin-right: 55px;
         color: #EB5428;
+    }
+    .main-nav li {
+        width: 100%;
     }
     nav {
         height: 250px;
     }
     nav .avatar{
         position: absolute;
-        left: 13px;
+        left: -20px;
         top: 0px;
         width: 90px;
     }
     nav .sign {
         position: absolute;
-        right: 65px;
+        right: 23px;
         top: 12px;
     }
     .search {
         position:relative; 
-        bottom: 270px;
-        left: 170px;
+        bottom: 170px;
+        margin-top: -100px;
+        left: 15%;
+    }
+    .caption {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        margin-bottom: -110px;
+        width: 100%;
+        height: 100px;
+        gap: 40px;
+        background-color: rgba(242,242,242, 0.6);
+    }
+    .caption a {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        bottom: 55px;
+    }
+    .street-tacos {
+        position: absolute;
+        left: 60px;
+        top: 250px;
     }
 }
 @media screen and (min-width:1280px){ 
